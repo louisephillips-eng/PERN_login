@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import api from "./api.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await axios.get("/api/auth/me");
+        const res = await api.get("/api/auth/me");
         setUser(res.data);
       } catch (err) {
         setUser(null);
