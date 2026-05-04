@@ -12,7 +12,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NotFound from "./components/NotFound";
 
-axios.defaults.withCredentials = true;
+//axios.defaults.withCredentials = true;
 
 function App() {
   const [user, setUser] = useState(null);
